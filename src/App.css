@@ -1,38 +1,92 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-auto-rows: minmax(125px, auto);
+  grid-gap: .5rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  background-image: url("images-guitar.jpg");
+  background-attachment: fixed;
+  background-size: fixed;
+}
+@media screen and (min-width: 40em) {
+  .App {
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.parallelogram{
+  width: 700px;
+  height: 1000px;
+  transform: skew(30deg);
+  transform: rotate(-15deg);
+  background-color: #eceee6;
+  margin-top: -500px;
+  margin-left: -100px;
+  position: fixed;
+  /* grid-column: 1;
+  grid-row: 1 / 8;  */
+}
+/* .logo{
+
+} */
+.logoTop {
+  background-image: url("logo-Musicentrance.png");
+  /* background-attachment: fixed; */
+  /* background-size: 100% 100%; */
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px,auto);
+  /* justify-content: center;
+  align-items: center; */
+  transform: skew(-30deg);
+  transform: rotate(15deg);
+  padding: 350px 10px 1500px 100px;
+  margin:10px 10px 10px 10px ;
+  /* grid-column: 1;
+  grid-row: 1 / 8;  */
+  font-family: 'Prompt', sans-serif;
+  width: auto;
+  height: auto;  
+}
+.label{
+  text-align: left;
+}
+.input{
+  border-radius: 8px;
+}
+.forgot-passsword{
+  text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button{
+  background-color:#b3cb04;
+  border-radius: 8px;
+  height: auto;
+  width: 188px;
+}
+
+.picture-background {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px); */
+    /* grid-column: 5;
+    grid-row: 5 / 8; */
+    width: auto;
+    height: auto;
+    
+    /* padding: -200px 100px 200px 100px;
+    margin: 10px 10px 10px 10px ;  */
+    position: fixed; 
+}
+
+.background {
+  background-image: url("images-guitar.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }

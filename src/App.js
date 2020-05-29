@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import LoginForm from './components/LoginForm';
+import PictureBackground from './components/PictureBackground';
 import './App.css';
 
 function App() {
   return (
+    // <div className="App">
+    //   <div class="row">
+    //     <div class="col-md-6"><LoginForm /></div>
+    //     {/* <div class="col-md-6"><PictureBackground /></div> */}
+    //   </div>
+    // </div>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div class="w3-row w3-border">
+        <div class="w3-container"><LoginForm /></div>
+      </div>
     </div>
   );
 }
