@@ -1,5 +1,6 @@
 import React from 'react';
 import LoginForm from './components/LoginForm';
+import TestForm from './components/TestForm';
 import PictureBackground from './components/PictureBackground';
 import './App.css';
 
